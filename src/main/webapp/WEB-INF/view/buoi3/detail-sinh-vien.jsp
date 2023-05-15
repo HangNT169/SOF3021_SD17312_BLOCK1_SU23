@@ -5,14 +5,14 @@
     <title>Title</title>
 </head>
 <body>
-    MSSV:
+    MSSV: ${sv.ma}
     <br/>
-    Ten:
+    Ten:    ${sv.ten}
     <br/>
-    Tuoi:
+     Tuoi: ${sv.tuoi}
     <br/>
-    Dia chi:
+    Dia chi: ${sv.diaChi}
     <br/>
-    Gioi tinh:
+    Gioi tinh: ${sv.gioiTinh}
 </body>
 </html>

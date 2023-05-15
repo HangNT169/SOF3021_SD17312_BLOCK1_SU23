@@ -13,13 +13,13 @@
 <body>
 
 <form action="">
-    MSSV: <input type="text" name="mssv"  />
+    MSSV: <input type="text" name="mssv" value="${sv.ma}" >
     <br/>
-    Tên: <input type="text" name="ten" />
+    Tên: <input type="text" name="ten"/>
     <br/>
-    Tuổi: <input type="text" name="tuoi" />
+    Tuổi: <input type="text" name="tuoi"/>
     <br/>
-    Địa chỉ: <input type="text" name="diaChi" />
+    Địa chỉ: <input type="text" name="diaChi"/>
     <br/>
     Giới tính:
     <input type="radio" name="gioiTinh" checked value="true"/>Nam

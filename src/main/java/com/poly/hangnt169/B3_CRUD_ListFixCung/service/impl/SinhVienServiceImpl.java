@@ -23,4 +23,26 @@ public class SinhVienServiceImpl implements SinhVienService {
     public List<SinhVien> getAll() {
         return sinhViens;
     }
+
+    @Override
+    public void add(SinhVien sinhVien) {
+        // add SV
+        sinhViens.add(sinhVien);
+    }
+
+    @Override
+    public SinhVien detail(String ma) {
+        for (SinhVien sv : sinhViens) {
+            if (sv.getMa().equalsIgnoreCase(ma)) {
+                return sv;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public void remove(String ma) {
+        SinhVien sinhVien = detail(ma);
+        sinhViens.remove(sinhVien);
+    }
 }
