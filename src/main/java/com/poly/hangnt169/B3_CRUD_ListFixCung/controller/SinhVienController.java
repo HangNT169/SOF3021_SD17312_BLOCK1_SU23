@@ -38,23 +38,29 @@ public class SinhVienController {
         return "/buoi3/add-sinh-vien";
     }
 
-    @PostMapping("add")
-    public String addSinhVien(@RequestParam("mssv") String mssv,
-                              @RequestParam("ten") String ten,
-                              @RequestParam("tuoi") String tuoi,
-                              @RequestParam("diaChi") String diaChi,
-                              @RequestParam("gioiTinh") String gioiTinh) {
-        // Convent ve Object SinhVien
-        SinhVien sinhVien = SinhVien.builder()
+    @PostMapping("/sinh-vien/add")
+    public String addSinhVien(@RequestParam("mssv") String ma, @RequestParam("ten") String ten,
+                              @RequestParam("tuoi") String tuoi, @RequestParam("diaChi") String diaChi,
+                              @RequestParam("gioiTinh") String gt, Model model) {
+        // B1: Khoi tao 1 Object
+        // C1: Su dung contructor
+//        SinhVien sinhVien = new SinhVien(ma, ten, Integer.valueOf(tuoi), diaChi, Boolean.valueOf(gt));
+        // C2: Su dung builder
+        SinhVien sv = SinhVien.builder()
                 .diaChi(diaChi)
-                .ma(mssv)
+                .gioiTinh(Boolean.valueOf(gt))
+                .ma(ma)
                 .ten(ten)
                 .tuoi(Integer.valueOf(tuoi))
-                .gioiTinh(Boolean.valueOf(gioiTinh))
-                .build(); // <=> Khi khong truyen bat cu 1 gia tri nao vao => Contructor Khong Tham So
-        // Goi Add Trong Service
-        sinhVienService.add(sinhVien);
-        // Chuyen lai trang sinh-vien/hien-thi
+                .build(); // <=> contrutor khong tham so
+        // B2: Goi add trong service
+        sinhVienService.add(sv);
+        //B3: Quay lai trang chu
+        // C1: Return JSP
+//        sinhViens = sinhVienService.getAll();
+//        model.addAttribute("lists", sinhViens);
+//        return "/buoi3/sinhviens";
+        // C2: redirect
         return "redirect:/sinh-vien/hien-thi";
     }
 
