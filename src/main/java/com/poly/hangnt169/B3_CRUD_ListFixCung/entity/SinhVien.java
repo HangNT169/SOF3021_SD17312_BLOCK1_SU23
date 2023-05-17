@@ -4,6 +4,7 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -19,14 +20,15 @@ import lombok.ToString;
 @Builder // Giup tao duoc 1 contructor co so luong tham so tuy y
 public class SinhVien {
 
-    @NotEmpty(message = "Trong day")
-    @Min(value = 5)
+    @NotEmpty(message = "Ahihi do ngoc")
+    @Size(min = 5)
     private String ma;
 
     @Pattern(regexp = "[a-z A-Z]+")
     private String ten;
 
     @NotNull
+    @Min(value = 5)
     private Integer tuoi;
 
     private String diaChi;
