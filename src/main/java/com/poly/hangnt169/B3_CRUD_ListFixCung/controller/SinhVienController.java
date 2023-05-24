@@ -4,6 +4,7 @@ import com.poly.hangnt169.B3_CRUD_ListFixCung.entity.SinhVien;
 import com.poly.hangnt169.B3_CRUD_ListFixCung.service.SinhVienService;
 import com.poly.hangnt169.B3_CRUD_ListFixCung.service.impl.SinhVienServiceImpl;
 import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -22,7 +23,10 @@ import java.util.List;
 public class SinhVienController {
 
     // MVC => Tat ca ham request trong controller => LUON LUON TRA VE VIEW (RETURN STRING)
-    private SinhVienService sinhVienService = new SinhVienServiceImpl();
+//    private SinhVienService sinhVienService = new SinhVienServiceImpl();
+
+    @Autowired
+    private SinhVienService sinhVienService;
 
     private List<SinhVien> listSinhVien = new ArrayList<>();
 

@@ -2,10 +2,16 @@ package com.poly.hangnt169.B3_CRUD_ListFixCung.service.impl;
 
 import com.poly.hangnt169.B3_CRUD_ListFixCung.entity.SinhVien;
 import com.poly.hangnt169.B3_CRUD_ListFixCung.service.SinhVienService;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+//@Component
+@Service
+//@Repository
 public class SinhVienServiceImpl implements SinhVienService {
 
     private List<SinhVien> sinhViens;

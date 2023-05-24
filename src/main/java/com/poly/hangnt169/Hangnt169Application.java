@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Hangnt169Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Hangnt169Application.class, args);
+        SpringApplication.run(Hangnt169Application.class, args); // DOng tao ra container (THung chua)
+        // Spring => Application Context = Container
+        // Dependency
     }
 
 }
