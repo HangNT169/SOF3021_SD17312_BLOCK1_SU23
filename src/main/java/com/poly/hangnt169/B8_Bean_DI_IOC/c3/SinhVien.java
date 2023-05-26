@@ -8,7 +8,7 @@ public class SinhVien {
         this.trangPhuc1 = trangPhuc1;
     }
 
-    public void svMac(){
+    public void svMac() {
         trangPhuc1.wear();
     }
 }

@@ -2,9 +2,9 @@ package com.poly.hangnt169.B8_Bean_DI_IOC.c2;
 
 public class SinhVien {
 
-//    private Vay vay;
+    //    private Vay vay;
     // Class = new Class
-    private  TrangPhuc trangPhuc;
+    private TrangPhuc trangPhuc;
     // C2: Interface = new Class
 
     public SinhVien() {
@@ -12,7 +12,7 @@ public class SinhVien {
         this.trangPhuc = new QuanAo();
     }
 
-    public void svMac(){
+    public void svMac() {
         trangPhuc.wear();
     }
 

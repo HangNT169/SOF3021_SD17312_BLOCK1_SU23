@@ -8,10 +8,10 @@
 <form action="/ket-qua" method="post">
     <div class="container">
         <label><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" >
+        <input type="text" placeholder="Enter Username" name="uname">
 
         <label><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" >
+        <input type="password" placeholder="Enter Password" name="psw">
 
         <button type="submit">Login</button>
     </div>

@@ -4,7 +4,7 @@ public class SinhVien {
 
     private TrangPhuc trangPhuc = new TrangPhuc();
 
-    public void sinhVienMac(){
+    public void sinhVienMac() {
         trangPhuc.wear();
     }
 //    1. TIGHT-COUPLING - Liên kết ràng buộc

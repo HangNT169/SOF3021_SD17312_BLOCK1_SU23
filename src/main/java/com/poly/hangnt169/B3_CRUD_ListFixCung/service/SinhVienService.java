@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface SinhVienService {
 
-    List<SinhVien>getAll();
+    List<SinhVien> getAll();
 
     void add(SinhVien sinhVien);
 

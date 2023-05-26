@@ -15,8 +15,8 @@ public class HelloController {
     // MVC: MODELE <=> VIEW <=> CONTROLLER
     // Tat cac cac ham trong controller luon luon tra ve VIEW (STRING)
     @GetMapping("/demo")
-    public String hienThiGiaoDienDemo(Model model){
-        model.addAttribute("hangnt169","PTPM-JAVA");
+    public String hienThiGiaoDienDemo(Model model) {
+        model.addAttribute("hangnt169", "PTPM-JAVA");
         return "trang-chu";
     }
 }

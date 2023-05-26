@@ -2,7 +2,6 @@ package com.poly.hangnt169.B3_CRUD_ListFixCung.controller;
 
 import com.poly.hangnt169.B3_CRUD_ListFixCung.entity.SinhVien;
 import com.poly.hangnt169.B3_CRUD_ListFixCung.service.SinhVienService;
-import com.poly.hangnt169.B3_CRUD_ListFixCung.service.impl.SinhVienServiceImpl;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

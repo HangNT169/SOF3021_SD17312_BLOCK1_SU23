@@ -4,7 +4,7 @@ public class GiangVien {
 
     private TrangPhuc trangPhuc = new TrangPhuc();
 
-    public void giangVienMac(){
+    public void giangVienMac() {
         trangPhuc.wear();
     }
 }
