@@ -18,7 +18,7 @@ public class TestSchedule {
     // https://www.baeldung.com/spring-scheduled-tasks
     // Set thoi gian ham service chay
 //    @Scheduled(fixedRate = 2000)  // Tinh theo ms
-    @Scheduled(cron = "30 9 15 * *")
+    @Scheduled(cron = "0 0 12 * * ?")
     public void datChuongBaoThuc() {
         try {
             testService.chuongBaoThuc();
